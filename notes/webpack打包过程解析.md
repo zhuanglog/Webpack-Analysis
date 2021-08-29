@@ -1,5 +1,10 @@
+整体思路
 
-　一、node启动webpack.js文件，在这个文件主要引入 node_modules/webpack-cli/bin/cli.js，下面是引用过程解析cli地址的代码
+![image](https://user-images.githubusercontent.com/30818926/131245066-bd0a48b9-dd90-416c-a73d-15e2dc60c34c.png)
+
+　
+ 
+ 一、node启动webpack.js文件，在这个文件主要引入 node_modules/webpack-cli/bin/cli.js，下面是引用过程解析cli地址的代码
 
 ```
 	const path = require("path");
