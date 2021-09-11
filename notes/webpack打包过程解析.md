@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/30818926/131245066-bd0a48b9-dd90-416c-a73d-15e2dc60c34c.png)
 
-　
+会先执行webpack.js完成一个新的compiler对象，并把我们配置和默认的插件挂载到compiler对象身上，之后执行compiler的run方法，由这里开始就会送入入口文件到compilation对象，在compilation当中会把入口文件及其对应的一层层的依赖文件都送入NormalModule当中完成编译，打包过程会先把代码转成AST树，按照一定规则修改，然后再转成code，如果遇到非js文件就会调用loader转换；每个文件编译完成后就会按照依赖顺序放置于一个数组当中，合并成一个assest，由compiler的emit方法推送到指定目录当中
  
  一、node启动webpack.js文件，在这个文件主要引入 node_modules/webpack-cli/bin/cli.js，下面是引用过程解析cli地址的代码
 
