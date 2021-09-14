@@ -353,7 +353,6 @@ this.compile(onCompiled)
     }
 ```
 
-
 ```
   emitAssets(compilation, callback) {
     // 当前需要做的核心： 01 创建dist  02 在目录创建完成之后执行文件的写操作
@@ -380,6 +379,4 @@ this.compile(onCompiled)
 
   }
 ```
-
-
 
